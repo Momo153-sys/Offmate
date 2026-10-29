@@ -1,0 +1,75 @@
+
+@import "tailwindcss";
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #e8ece8;
+  background: #101310;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --app-bg: #101310;
+  --panel-bg: #171b17;
+  --panel-border: #303830;
+  --text-primary: #e8ece8;
+  --text-muted: #9aa49a;
+  --accent: #8bcf9b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  background: var(--app-bg);
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--app-bg);
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  border: 0;
+  text-align: left;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea {
+  font-size: 16px;
+}
+
+::selection {
+  background: #456b4b;
+  color: #fff;
+}
